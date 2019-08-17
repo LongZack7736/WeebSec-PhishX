@@ -796,7 +796,7 @@ def Instagram():
 
 	display.stop()
 
-	from_email = random.choice(['no-reply@instagrams.com','security@instagrams.com'])
+	from_email = random.choice(['no-reply@insta.com','secure@insta.com'])
 
 
 
